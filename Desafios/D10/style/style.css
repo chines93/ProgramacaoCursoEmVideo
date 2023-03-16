@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor1: #91BBF2 ;
+    --cor2: #035AA6;
+    --cor3: #023059;
+    --cor4: #011526;
+    --cor5: #0367A6;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-droid: 'idroid';
+}
+/*
+root serve como variavel ai posso mudar so em cima as cores e muda no site todo e nao tenho que mudar um por um, tambem anotei no caderno.
+
+p, h1, h2, h3,... ai em vez de digitar isso posso digitar so *{} e ele entende que é pra todo comando html
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+    text-align: justify;
+}
+
+header{
+    color: white;
+    background-color: var(--cor4);
+    background-image: linear-gradient(180deg , #0367A6, #023059, #011526);
+    padding: 40px;
+    text-align: center;
+    min-height: 150px;
+}
+nav{
+    color: white;
+    background-color: var(--cor4);
+    background-image: linear-gradient(180deg , #011526, #023059, #0367A6);
+    padding: 10px;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 7px 7px black;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    background-color: var(--cor1);
+    color: #011526;
+    border-radius: 5px;
+
+}
+
+header h1{
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px var(--cor4);
+}
+
+header p{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    text-shadow: 2px 2px 0px var(--cor4);
+}
+
+a.externo:after{
+    content: ' \1F517';
+}
+main h1{
+font-family: var(--font-droid);
+font-size: 2em;
+
+}
+
+main h2{
+    font-family: var(--font-droid);
+    font-size: 1.3em;
+}
+
+main p{
+    text-indent: 30px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+    
+}
+
+main strong{
+    color: var(--cor4);
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+.fontDroid{
+    display: block;
+    font-family:var(--font-droid);
+    color:white;
+    background-image:linear-gradient(90deg, var(--cor4) ,var(--cor2), transparent );
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 50px var(--cor4);
+
+}
+
+main img{
+width: 100%;
+}
+
+.pequeno{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+.news{
+    margin: 0px;
+    padding: 0px;
+}
+
+.video{
+    background-color:var(--cor3) ;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.extra{
+    display: block;
+    background-color: var(--cor5);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px var(--cor4);
+
+}
+
+.extra ul{
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+h3{
+    color: white;
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+footer{
+    color: white;
+    background-color:var(--cor4);
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}

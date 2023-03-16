@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente diminua e aumente o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexivel">
+
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir um audio</p>
+    <audio src="midia/X2Download.app - Dua Lipa - Don't Start Now (Official Music Video) (128 kbps).mp3"controls autoplay></audio>
+<h2>Existe tambem outra maneira menos limitada de colocar audio</h2>
+<audio preload="metadata" controls>
+<source src="midia/Jingle Bells - DJ Williams.mp3" type="audio/mpeg">
+</audio>
+<h1>Colocando vídeos</h1>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color:aqua ;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: blue;
+            margin: auto;
+            box-shadow: 2px 2px 50px black;
+            border-radius: 10px 40px;
+        }
+        a{
+            border: 3px solid green;
+        }
+        .bolas{
+            display: inline;
+            margin: auto ;
+        }
+        #bolaAzul{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #bolaVermelha{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .letras{
+            padding-top: 25%;
+            padding-left: 25%;
+         
+        }
+    </style>
+</head>
+<body>
+    <h1>Exempo de caixas box-level</h1>
+    <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links não</a>, os titulos tambem são box-levels.</p>
+    <div class="bolas">
+        <div id="bolaAzul"><p class="letras">Cruzeiro</p></div>
+        <div id="bolaVermelha"><p class="letras">Flamengo</p></div>
+    </div>
+</body>
+</html>

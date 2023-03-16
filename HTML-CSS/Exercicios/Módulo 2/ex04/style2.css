@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'bottom';
+    src: url(Bottom\ Rock.otf) format('opentype'), url(Bottom\ Rock.ttf) format('truetype');
+}
+@font-face {
+    font-family:'purple' ;
+    src: url(purple_smile/Purple\ Smile.otf) format('opentype'), url(purple_smile/Purple\ Smile.ttf) format('truetype');
+}    
+
+
+p{
+font-family: 'purple';
+color: rgb(17, 144, 99);
+}
+h1{
+font-family: 'bottom';
+font-weight: normal;
+text-decoration: underline red;
+color: rgb(128, 187, 1);
+}
